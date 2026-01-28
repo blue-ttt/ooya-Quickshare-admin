@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!-- Created with https://packager.turbowarp.org/ -->
 <html>
@@ -385,5 +386,15 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
     };
     run().catch(handleError);
   </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(reg => console.log('PWA準備完了！', reg))
+          .catch(err => console.error('登録失敗...', err));
+      });
+    }
+  </script>
+</body>
 </body>
 </html>
