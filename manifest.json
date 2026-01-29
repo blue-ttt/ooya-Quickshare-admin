@@ -1,6 +1,6 @@
 {
-  "name": "Ooya Quickshare",
-  "short_name": "ooya share",
+  "name": "Ooya Quickshare admin",
+  "short_name": "share admin",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
